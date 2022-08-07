@@ -3,11 +3,32 @@
     --border-button: 1px solid #888;
 }
 
-button {
+.Button {
     font-size: 1.4em;
     background-color: var(--bg-button);
     border: none;
     border-right: var(--border-button);
     border-bottom: var(--border-button);
     outline: none;
+}
+
+.Button:active {
+    background-color: #ccc;
+}
+
+.Button.Double {
+    grid-column: span 2;
+}
+
+.Button.Triple {
+    grid-column: span 3;
+}
+
+.Button.Operation {
+    background-color: #fa8231;
+    color: #fff;
+}
+
+.Button.Operation:active {
+    background-color: #fa8231cc;
 }
